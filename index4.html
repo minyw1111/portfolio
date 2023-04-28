@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    body {
+      font-family: "Noto Sans", notokr, "Malgun Gothic", "맑은 고딕", arial,
+        "Mark pro", sans-serif;
+    }
+    .main-section-news .main-title {
+      margin-top: 0;
+    }
+    .main-title {
+      display: inline-block;
+      margin-top: 0;
+      opacity: 1;
+      line-height: 1;
+      color: #000;
+      font-family: "Mark Pro";
+      font-size: 96px;
+      font-weight: 800;
+    }
+    .main-title:after {
+      margin: 0 0 0 16px;
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: #d50037;
+    }
+    .main-section-news .main-news-nav {
+      margin: 48px -20px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .main-section-news container {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+    }
+  </style>
+  <body>
+    <section class="main-section-news">
+      <div class="container">
+        <h1 class="main-title">NEWS <br />&amp;Notice</h1>
+        <div class="main-news-nav">
+          <a href="#notice-area">공지사항</a>
+        </div>
+        <div class="main-news-illust"></div>
+        <div class="main-news-container"></div>
+      </div>
+    </section>
+  </body>
+</html>

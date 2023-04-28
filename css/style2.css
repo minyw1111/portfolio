@@ -1,0 +1,51 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Noto Sans", notokr, "Malgun Gothic", "맑은 고딕", arial,
+    "Mark pro", sans-serif;
+}
+.main-section-franchise .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.main-section-franchise .main-title {
+  margin-top: 70px;
+}
+.main-section-franchise.main-title {
+  display: inline-block;
+  margin-top: 20vh;
+  opacity: 1;
+  color: #000;
+  font-weight: 990;
+  margin-top: 13vh;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.main-title:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 16px;
+  background-color: #d50037;
+}
+.main-section-franchise .button span {
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.main-section-franchise .button {
+  justify-content: space-between;
+  margin-bottom: 0;
+}
