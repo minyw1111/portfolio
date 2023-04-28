@@ -24,6 +24,18 @@
     .main-section-news .main-title {
       margin-top: 0;
     }
+    .section .container {
+      display: inline-block;
+      width: 100%;
+      text-align: left;
+    }
+    .container {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      padding: 0 48px;
+      max-width: 1312px;
+    }
     .main-title {
       display: inline-block;
       margin-top: 0;
@@ -34,7 +46,7 @@
       font-size: 96px;
       font-weight: 800;
     }
-    .main-title:after {
+    .main-title::after {
       margin: 0 0 0 16px;
       content: "";
       display: inline-block;
@@ -43,15 +55,85 @@
       background-color: #d50037;
     }
     .main-section-news .main-news-nav {
-      margin: 48px -20px 80px;
+      margin: 30px -16px 63px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
     }
-    .main-section-news container {
+    .main-section-news .container {
       display: inline-block;
       width: 100%;
       text-align: left;
+    }
+    .main-section-news .main-news-illust {
+      display: block;
+      width: 320px;
+      height: 203px;
+      margin-bottom: 10vh;
+      background-position: 50% 50%;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-image: url(images/notice.png);
+      margin: 0 0 96px;
+    }
+    .main-section-news .main-news-container {
+      position: absolute;
+      top: 50%;
+      right: 94px;
+      width: 45%;
+      height: 100%;
+      margin-top: -282px;
+      overflow: hidden;
+    }
+    .main-section-news .main-news-list > li strong {
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      width: auto;
+      max-width: 100%;
+      height: 36px;
+      color: #000;
+      padding-top: 0.2em;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.1;
+      float: right;
+    }
+    .main-section-news .main-news-list > li em {
+      display: block;
+      color: #d50037;
+    }
+    .swiper-slide {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition-property: transform;
+    }
+    .main-section-news .main-news-list > li {
+      position: relative;
+      border-bottom: 1px solid #ebebeb;
+    }
+    .main-section-news .main-news-list > li a,
+    .main-section-news .main-news-list > li p {
+      padding: 30px 32px;
+      z-index: 0;
+      position: relative;
+      display: block;
+    }
+    .main-section-news .main-news-nav > li .date {
+      display: block;
+      margin-top: 1px;
+      font-size: 16px;
+      color: #333;
+    }
+    .swiper-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      box-sizing: content-box;
     }
   </style>
   <body>
@@ -59,10 +141,23 @@
       <div class="container">
         <h1 class="main-title">NEWS <br />&amp;Notice</h1>
         <div class="main-news-nav">
-          <a href="#notice-area">공지사항</a>
+          <a
+            >공지사항
+            <li><strong>제 5기 투썸플레이스 주식회사 결산공고</strong></li>
+            <span class="date">2023-04-04</span></a
+          >
         </div>
         <div class="main-news-illust"></div>
-        <div class="main-news-container"></div>
+        <div class="main-news"></div>
+        <div id="notice-area" class="main-news-container"></div>
+        <ul class="main-news-list swiper wrapper"></ul>
+        <ul class="swiper-slide"></ul>
+        <h4>공지사항</h4>
+        <strong>투썸플레이스 이용약관 개정 안내</strong>
+        <span class="date">2023-03-20</span>
+        <h4>공지사항</h4>
+        <strong>위치기반서비스 이용약관 개정 안내</strong>
+        <span class="date">2023-03-10</span>
       </div>
     </section>
   </body>
